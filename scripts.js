@@ -1,17 +1,10 @@
-function go_to_projects() {
+window.onscroll = function() {scrollFunction()};
 
-}
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("head").classList.add("head-small");
+    } else {
+        document.getElementById("head").classList.remove("head-small");
+    }
+  }
 
-// $('a[href*="#projects"]').on('click', function(e) {
-//     e.preventDefault()
-  
-//     $('html, body').animate(
-//       {
-//         scrollTop: $($(this).attr('href')).offset().top,
-//       },
-//       500,
-//       'linear'
-//     )
-//   })
-
-// https://codepen.io/taniarascia/pen/MJEXZj
