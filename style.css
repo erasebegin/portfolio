@@ -103,6 +103,7 @@ body {
     color: var(--dark3);
     cursor: pointer;
     text-decoration: none;
+    transition: 250ms;
 }
 
 .local-btn-cta:hover,
@@ -113,6 +114,7 @@ body {
     background: rgb(255, 248, 153);
     color: var(--dark3);
     text-decoration: none;
+    transition: 250ms;
 }
 
 .projects {
@@ -128,4 +130,7 @@ body {
     object-fit: cover;
 }
 
+.local-card-title a {
+    color: var(--dark3);
+}
 
