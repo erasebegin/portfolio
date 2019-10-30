@@ -11,15 +11,16 @@ body {
     --dark1: #E5E6AA;
     --dark2: #BEBF8E;
     --dark3: #3F402F;
-
-    background: linear-gradient(180deg,var(--dark2),var(--dark3));
+    background-image: url(https://i.ibb.co/PWqwptK/mandala-color2.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .local-hero {
     background-image: url(https://i.ibb.co/PwFSPmC/mandala-color1.png);
     background-color: var(--dark1);
     background-blend-mode: screen;
-    background-position: 0 -100px;
+    background-position: center;
     background-size: 150%;
     object-fit: fill;
     min-height: 100vh;
@@ -60,6 +61,7 @@ body {
 
 .hero-img-container {
     width: 500px;
+    pointer-events: none;
 }
 
 .head {
@@ -139,19 +141,27 @@ body {
     align-items: center;
     background: var(--light1);
     margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .btn-contact {
     font-size: 4rem;
-    margin: 2em;
+    margin: 1em 1em;
+    padding: .7em;
     color: var(--dark3);
     transition: 250ms;
+    background-image: url(https://i.ibb.co/vqXBDnx/mandala-small-transparent-0-5x.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .btn-contact:hover,
 .btn-contact:focus {
     transform:translateX(-1px);
     transform:translateY(-2px);
+    background-size: 150px;
     transition: 250ms;
     color: var(--dark2);
 }
