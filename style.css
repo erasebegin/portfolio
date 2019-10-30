@@ -32,7 +32,6 @@ body {
     font-family: 'Indie Flower', cursive;
     text-align: center;
     margin: 5em 7em 0 25%;
-    /* background: rgba(255, 255, 255,0.7); */
     border-radius: 5px;
     color: var(--dark3);
     padding: 0 3em;
@@ -67,14 +66,14 @@ body {
     max-width: 100%;
     width: 500px;
     height: 500px;
-    transition: 250ms;
+    transition: 350ms;
 }
 
 .head-small {
     max-width: 100%;
-    width: 250px;
-    height: 250px;
-    transition: 250ms;
+    width: 300px;
+    height: 300px;
+    transition: 350ms;
 }
 
 .skills {
@@ -98,7 +97,7 @@ body {
     font-size: 2rem;
     padding: 0.5em 1em;
     border-radius: 10px;
-    margin-top: 2em;
+    margin: 2em 0.5em 0 0.5em;
     background: rgb(255, 235, 153);
     color: var(--dark3);
     cursor: pointer;
@@ -118,7 +117,6 @@ body {
 }
 
 .projects {
-    height: 200vh;
     margin-left: 25%;
 }
 
@@ -132,5 +130,68 @@ body {
 
 .local-card-title a {
     color: var(--dark3);
+}
+
+.contact {
+    display: flex;
+    flex-flow: row, wrap;
+    justify-content: center;
+    align-items: center;
+    background: var(--light1);
+    margin: 0;
+}
+
+.btn-contact {
+    font-size: 4rem;
+    margin: 2em;
+    color: var(--dark3);
+    transition: 250ms;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+    transform:translateX(-1px);
+    transform:translateY(-2px);
+    transition: 250ms;
+    color: var(--dark2);
+}
+
+@media (max-width: 650px) {
+    .hero-txt {
+        padding: 0.2;
+        margin: 0;
+    }
+
+    .local-hero .hero-txt span {
+        font-size: 250%;
+    }
+
+    .skills {
+        padding: 0 .2;
+        margin: 0;
+    }
+
+    .local-btn-cta {
+        margin: 1em 0.1em;
+        align-self: center;
+        justify-self: center;;
+    }
+
+    .head {
+        display: none;
+    }
+
+    .hero-img-container {
+        width: 0px;
+    }
+
+    .projects {
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn-contact {
+        margin: 0.3em;
+    }
 }
 

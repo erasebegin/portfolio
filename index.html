@@ -11,12 +11,13 @@
     <!-- Local Styles -->
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Long+Cang&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Long+Cang&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f5f87e1ceb.js" crossorigin="anonymous"></script>
   </head>
   <body>
       <div class="container-fluid local-container">
-          <div class="row local-hero">
+          <div class="row local-hero"> <!--HERO-->
               <div class="hero-img-container fixed-bottom">
                 <img src="https://i.ibb.co/XYVTpxD/fresh-bald1.png" alt="illustration of Chris Haupt's head" class="head" id="head">
               </div>
@@ -39,11 +40,12 @@
                 </div>
                 <div class="row">
                     <a href="#projects" class="local-btn-cta">Projects</a>
+                    <a href="#contact" class="local-btn-cta">Contact</a>
                 </div>
 
               </div>
           </div>
-          <div class="projects" id="projects">
+          <div class="projects" id="projects"> <!--PROJECTS-->
             <div class="row">
               <div class="card col-md-3 m-4 local-card">
                 <a href="https://erasebegin.github.io/js-journal" target="_blank"><img class="card-img-top local-card-img" src="./screens/js-journal.png"></a>
@@ -91,12 +93,15 @@
               </div>
             </div>
           </div>
+          <div class="contact row" id="contact"> <!--CONTACT-->
+            <a href="mailto:chris.james.haupt@gmail.com" class="btn-contact"><i class="fas fa-envelope-open-text" aria-hidden="true"></i></a>
+            <a href="https://github.com/erasebegin" class="btn-contact"><i class="fab fa-github-alt"></i></i></a>
+            <a href="https://linkedin.com/in/chris-haupt" class="btn-contact"><i class="fab fa-linkedin"></i></a>
+          </div>
       </div>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="scroll-animation.js"></script>
   </body>
