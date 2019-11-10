@@ -27,15 +27,18 @@ body {
 
 }
 
+.hero-container-inner {
+    background: rgba(255, 255, 255, 0.7);
+}
+
 .hero-txt {
     display: flex;
     flex-direction: column;
     font-family: 'Indie Flower', cursive;
+    margin: 3em 0;
     text-align: center;
-    margin: 5em 7em 0 25%;
     border-radius: 5px;
     color: var(--dark3);
-    padding: 0 3em;
 }
 
 .hero-txt span {
@@ -61,7 +64,7 @@ body {
 
 .hero-img-container {
     width: 500px;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .head {
@@ -78,15 +81,8 @@ body {
     transition: 350ms;
 }
 
-.skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.7);
-    margin: 0 0 0 25%;
-    padding: 1em 4em;
-    border-radius: 5px;
+.head-small:hover {
+    transform: translateY(150px);
 }
 
 .code-logo {
@@ -94,16 +90,23 @@ body {
     max-height: 50px;
 }
 
+.btn-container {
+    margin: 5em auto;
+    width: 70%;
+}
+
 .local-btn-cta {
     font-family: 'Indie Flower', cursive;
     font-size: 2rem;
+    min-width: 200px;
     padding: 0.5em 1em;
     border-radius: 10px;
-    margin: 2em 0.5em 0 0.5em;
+    margin: auto;
     background: rgb(255, 235, 153);
     color: var(--dark3);
     cursor: pointer;
     text-decoration: none;
+    text-align: center;
     transition: 250ms;
 }
 
@@ -123,7 +126,7 @@ body {
 }
 
 .local-card {
-    max-height: 400px;
+    min-width: 300px;
 }
 
 .local-card-img {
@@ -166,25 +169,49 @@ body {
     color: var(--dark2);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
+    .local-hero {
+        padding: 0;
+    }
+
+    .hero-container-inner {
+        margin: 0;
+    }
+    
+
     .hero-txt {
-        padding: 0.2;
+        padding: 2em 0;
         margin: 0;
     }
 
-    .local-hero .hero-txt span {
-        font-size: 250%;
+    .hero-txt-ln1,
+    .hero-txt-ln2 { 
+        font-size: 2.5rem;
     }
+
+    .hero-txt-ln2 {
+        margin-bottom: .7em;
+    }
+    
+    .hero-txt-ln3,
+    .hero-txt-ln4 {
+        margin: auto;
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    
 
     .skills {
         padding: 0 .2;
         margin: 0;
     }
 
+    .logos {
+        margin: auto;
+    }
+
     .local-btn-cta {
-        margin: 1em 0.1em;
-        align-self: center;
-        justify-self: center;;
+        margin: 1em auto;
     }
 
     .head {
