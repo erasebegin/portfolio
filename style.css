@@ -64,11 +64,6 @@ body {
     font-family: 'Long Cang', cursive;
 }
 
-.hero-img-container {
-    width: 500px;
-    /* pointer-events: none; */
-}
-
 .head {
     max-width: 100%;
     width: 500px;
@@ -131,16 +126,17 @@ body {
     margin-left: 25%;
 }
 
-.local-card {
-    min-width: 300px;
-}
-
 .local-card-img {
     object-fit: cover;
 }
 
 .local-card-title a {
     color: var(--dark3);
+}
+
+.illustration {
+    background-image: url(https://i.ibb.co/6mBq1Pd/mandala-color3-2x.png);
+    background-size: 900px;
 }
 
 .contact {
@@ -150,8 +146,6 @@ body {
     align-items: center;
     background: var(--light1);
     margin: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .btn-contact {
