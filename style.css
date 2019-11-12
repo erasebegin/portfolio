@@ -1,234 +1,265 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-
-    --light1: #FFFFE1;
-    --light2: #FEFFBD;
-    --dark1: #E5E6AA;
-    --dark2: #BEBF8E;
-    --dark3: #3F402F;
-    background-image: url(https://i.ibb.co/PWqwptK/mandala-color2.png);
-    background-size: cover;
-    background-position: center;
+  --light1: #ffffe1;
+  --light2: #feffbd;
+  --dark1: #e5e6aa;
+  --dark2: #bebf8e;
+  --dark3: #3f402f;
+  font-family: "Indie Flower", cursive;
+  background: var(--dark3);
 }
 
 .local-hero {
-    background-image: url(https://i.ibb.co/PwFSPmC/mandala-color1.png);
-    background-color: var(--dark1);
-    background-blend-mode: screen;
-    background-position: center;
-    background-size: 150%;
-    object-fit: fill;
-    min-height: 100vh;
-
+  background-image: url(https://i.ibb.co/PwFSPmC/mandala-color1.png);
+  background-color: var(--dark1);
+  background-blend-mode: screen;
+  background-position: center;
+  background-size: 150%;
+  background-attachment: fixed;
+  object-fit: fill;
+  min-height: 100vh;
 }
 
 .hero-container-inner {
-    background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .hero-txt {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Indie Flower', cursive;
-    margin: 3em 0;
-    text-align: center;
-    border-radius: 5px;
-    color: var(--dark3);
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0;
+  text-align: center;
+  border-radius: 5px;
+  color: var(--dark3);
 }
 
 .hero-txt span {
-    text-shadow: 2px 2px 2px var(--dark2);
+  text-shadow: 2px 2px 2px var(--dark2);
 }
 
 .hero-txt-ln2 {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .hero-txt-ln1,
 .hero-txt-ln2 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 .hero-txt-ln3,
 .hero-txt-ln4 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .hero-txt-ln2,
 .hero-txt-ln4 {
-    font-family: 'Long Cang', cursive;
+  font-family: "Long Cang", cursive;
 }
 
 .head {
-    max-width: 100%;
-    width: 500px;
-    height: 500px;
-    transition: 350ms;
+  max-width: 100%;
+  width: 500px;
+  height: 500px;
+  transition: 350ms;
 }
 
 .head-small {
-    max-width: 100%;
-    width: 300px;
-    height: 300px;
-    transition: 350ms;
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  transition: 350ms;
 }
 
 .head-small:hover {
-    transform: translateY(150px);
+  transform: translateY(150px);
 }
 
 .skills {
-    margin-top: 5em;
+  margin-top: 5em;
 }
 
 .code-logo {
-    max-width: 150px;
-    max-height: 50px;
+  max-width: 150px;
+  max-height: 50px;
 }
 
 .btn-container {
-    margin: 5em auto;
-    width: 70%;
+  margin: 5em auto;
+  width: 80%;
 }
 
 .local-btn-cta {
-    font-family: 'Indie Flower', cursive;
-    font-size: 2rem;
-    min-width: 200px;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    margin: auto;
-    background: rgb(255, 235, 153);
-    color: var(--dark3);
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: 250ms;
+  font-size: 2rem;
+  min-width: 200px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0.5em;
+  border-radius: 10px;
+  background: rgb(255, 235, 153);
+  color: var(--dark3);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: 250ms;
 }
 
 .local-btn-cta:hover,
 .local-btn-cta:focus {
-    transform:translateX(-1px);
-    transform:translateY(-2px);
-    box-shadow: 1px 1px 3px var(--dark3);
-    background: rgb(255, 248, 153);
-    color: var(--dark3);
-    text-decoration: none;
-    transition: 250ms;
+  transform: translateX(-1px);
+  transform: translateY(-2px);
+  box-shadow: 1px 1px 3px var(--dark3);
+  background: rgb(255, 248, 153);
+  color: var(--dark3);
+  text-decoration: none;
+  transition: 250ms;
 }
 
 .projects {
-    margin-left: 25%;
+  padding-top: 2em;
+  background-image: url(https://i.ibb.co/PWqwptK/mandala-color2.png);
+  background-size: cover;
+  background-position: center;
 }
 
+.projects-title-sm {
+  display: none;
+}
+
+.projects-title-lg h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--light2);
+  text-shadow: 0 0 30px var(--light1);
+}
+
+.local-card {
+    max-width: 400px;
+  }
+
 .local-card-img {
-    object-fit: cover;
+  object-fit: cover;
+}
+
+.local-card-title {
+  text-align: center;
+  margin-top: 0.5em;
 }
 
 .local-card-title a {
-    color: var(--dark3);
+  color: var(--dark3);
 }
 
 .illustration {
-    background-image: url(https://i.ibb.co/6mBq1Pd/mandala-color3-2x.png);
-    background-size: 900px;
+  background-image: url(https://i.ibb.co/6mBq1Pd/mandala-color3-2x.png);
+  background-size: 900px;
 }
 
 .contact {
-    display: flex;
-    flex-flow: row, wrap;
-    justify-content: center;
-    align-items: center;
-    background: var(--light1);
-    margin: 0;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+  background: var(--light1);
+  margin: 0;
 }
 
 .btn-contact {
-    font-size: 4rem;
-    margin: 1em 1em;
-    padding: .7em;
-    color: var(--dark3);
-    transition: 250ms;
-    background-image: url(https://i.ibb.co/vqXBDnx/mandala-small-transparent-0-5x.png);
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: center;
+  font-size: 4rem;
+  margin: 1em 1em;
+  padding: 0.7em;
+  color: var(--dark3);
+  transition: 250ms;
+  background-image: url(https://i.ibb.co/vqXBDnx/mandala-small-transparent-0-5x.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-contact:hover,
 .btn-contact:focus {
-    transform:translateX(-1px);
-    transform:translateY(-2px);
-    background-size: 150px;
-    transition: 250ms;
-    color: var(--dark2);
+  transform: translateX(-1px);
+  transform: translateY(-2px);
+  background-size: 150px;
+  transition: 250ms;
+  color: var(--dark2);
 }
 
 @media (max-width: 750px) {
-    .local-hero {
-        padding: 0;
-    }
+  .local-hero {
+    padding: 0;
+  }
 
-    .hero-container-inner {
-        margin: 0;
-    }
-    
+  .hero-container-inner {
+    margin: 0;
+  }
 
-    .hero-txt {
-        padding: 2em 0;
-        margin: 0;
-    }
+  .hero-txt {
+    padding: 2em 0;
+    margin: 0;
+  }
 
-    .hero-txt-ln1,
-    .hero-txt-ln2 { 
-        font-size: 2.5rem;
-    }
+  .hero-txt-ln1,
+  .hero-txt-ln2 {
+    font-size: 2.5rem;
+  }
 
-    .hero-txt-ln2 {
-        margin-bottom: .7em;
-    }
-    
-    .hero-txt-ln3,
-    .hero-txt-ln4 {
-        margin: auto;
-        font-size: 2rem;
-        line-height: 50px;
-    }
-    
+  .hero-txt-ln2 {
+    margin-bottom: 0.7em;
+  }
 
-    .skills {
-        padding: 0 .2;
-        margin: 0;
-    }
+  .hero-txt-ln3,
+  .hero-txt-ln4 {
+    margin: auto;
+    font-size: 2rem;
+    line-height: 50px;
+  }
 
-    .logos {
-        margin: auto;
-    }
+  .skills {
+    padding: 0 0.2;
+    margin: 0;
+  }
 
-    .local-btn-cta {
-        margin: 1em auto;
-    }
+  .logos {
+    margin: auto;
+  }
 
-    .head {
-        display: none;
-    }
+  .local-btn-cta {
+    margin: 1em auto;
+  }
 
-    .hero-img-container {
-        width: 0px;
-    }
+  .head {
+    display: none;
+  }
 
-    .projects {
-        margin: 0;
-        padding: 0;
-    }
+  .hero-img-container {
+    width: 0px;
+  }
 
-    .btn-contact {
-        margin: 0.3em;
-    }
+  .projects {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects-title-lg {
+    display: none;
+  }
+
+  .projects-title-sm {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+    color: var(--light2);
+    text-shadow: 0 0 20px var(--light1);
+  }
+
+  .btn-contact {
+    margin: 0.3em;
+  }
 }
-
