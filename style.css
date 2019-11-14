@@ -136,11 +136,25 @@ body {
   text-shadow: 0 0 30px var(--light1);
 }
 
+.card-container {
+  justify-content: center;
+}
+
 .local-card {
     max-width: 400px;
-  }
+    background: #fffff0;
+    transition: 250ms;
+}
+
+.local-card:hover,
+.local-card:focus {
+  background: #fff9da;
+  transform: translate(-2px,-2px);
+  transition: 250ms;
+}
 
 .local-card-img {
+  height: 200px;
   object-fit: cover;
 }
 
@@ -156,6 +170,14 @@ body {
 .illustration {
   background-image: url(https://i.ibb.co/6mBq1Pd/mandala-color3-2x.png);
   background-size: 900px;
+}
+
+.illustration h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--dark3);
+  text-shadow: 0 0 30px var(--light2);
+  padding: 1em 0;
 }
 
 .contact {
@@ -174,7 +196,7 @@ body {
   color: var(--dark3);
   transition: 250ms;
   background-image: url(https://i.ibb.co/vqXBDnx/mandala-small-transparent-0-5x.png);
-  background-size: 100px;
+  background-size: 80px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -185,7 +207,7 @@ body {
   transform: translateY(-2px);
   background-size: 150px;
   transition: 250ms;
-  color: var(--dark2);
+  color: #d2d385;
 }
 
 @media (max-width: 750px) {
