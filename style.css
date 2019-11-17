@@ -90,7 +90,6 @@ body {
 
 .btn-container {
   margin: 5em auto;
-  width: 80%;
 }
 
 .local-btn-cta {
@@ -149,6 +148,7 @@ body {
 .local-card:hover,
 .local-card:focus {
   background: #fff9da;
+  box-shadow: 2px 2px 2px var(--light1);
   transform: translate(-2px,-2px);
   transition: 250ms;
 }
